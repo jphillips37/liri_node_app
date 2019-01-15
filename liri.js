@@ -36,7 +36,6 @@ function concertThis(band) {
     axios.get(queryUrl).then(function(response){
         concertDate = moment(response.data[0].datetime).format("MM/DD/YYYY");
     
-        console.log(response.data[0]);
         console.log(" ");
         console.log("----------------------");
         console.log("Next Concert for " + band + ":")
